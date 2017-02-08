@@ -6,10 +6,10 @@ author: chuange
 #resume_site: http://www.hifreud.com/Resume.io/
 #github: https://github.com/luoyan35714/
 baseurl:
-description: Actually, less is more!
-meta_description: 高金川;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
-motto: It's our wits that make us men.
-banner: 学而不思则罔，思而不学则殆。
+description: 如果这世界上真有奇迹，那只是努力的另一个名字
+meta_description: 高金川;个人博客;平淡的生活，往往是最危险的
+motto: 如果这世界上真有奇迹，那只是努力的另一个名字
+banner: 平淡的生活，往往是最危险的
 
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
