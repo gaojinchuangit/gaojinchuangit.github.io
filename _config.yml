@@ -23,13 +23,13 @@ highlighter: Pygments
 # Build settings
 markdown: kramdown
 
-FB:
-  comments :
-    provider : duoshuo
-    duoshuo:
-        short_name : luoyan35714
-    disqus :
-        short_name : freudkang
+#FB:
+  #comments :
+    #provider : duoshuo
+    #duoshuo:
+        #short_name : luoyan35714
+    #disqus :
+        #short_name : freudkang
     # facebook :
     #   appid : 123
     #   num_posts: 5
