@@ -43,3 +43,40 @@ tag: current
 ```
     唤醒时间点：07(+8)：50：14 = 15：50：14
     唤醒时长：665-621 = 44s
+
+
+
+
+### 关于wifi耗电问题
+
+**关于电流的测量**
+
+    1 在测量wifi电流前，请先确认是否有一些可疑的第三方apk，比如QQ，比如wifi分析仪等，最好能够是拿一只没有安装第三方apk的手机进行测试。
+    2 测试电流时，最好是灭屏待机一段时间后，等电流稳定后进行测量。
+    3 如果是连接路由器进行测量，请务必不要使路由器接到外网，单独进行测试。
+    4 抓取log时，需要同时提供mobilelog和netlog，而且要能够复现完整的过程，且记录测试和结束的时间点。
+
+**耗电问题的log分析**
+
+    如果以上操作，发现电流仍然偏高，就需要分析log，主要从以下几点来分析，
+
+    1 在测量电流的时间段内，从mainlog搜索wakelock，查看是否wakelock被wifi长时间暂用而不释放。
+    2 搜索DHCP，查看是否有DHCP的频繁的续租ip地址
+    3 下载Wireshark软件，查看netlog，看看测量时间段内，是否有大量的数据包发送，比如tcp/ip包，DNS包，ARP包，ICMP包等
+
+    基本上，通过以上分析，大部分wifi耗电问题的原因都可以找到。
+
+
+
+
+### 如何测试 Mediatek 平台各个场景的功耗数据
+
+**测试功耗数据之前，请先确认以下配置：**
+
+    1、关闭 WIFI/BT/GPS，关闭数据连接，设置飞行模式。 （根据具体测试场景设置）
+    2、关闭 mobile log/modem log/net log，打开LOG会增加电流。注意：确认 /sdcard/mtklog （/data/mtklog） 中是否有 LOG 生成，确定关闭成功。
+    3、确认各个模块是否已经正常工作，各个模块都会影响功耗，需要在模块工作 OK 之后再测试功耗问题。
+    4、测试将所有第三方 APK 删除，排除第三方 APK 问题。
+
+![current8]({{ '/styles/images/androidcurrent/current9.jpg' | prepend: site.baseurl  }})
+![current9]({{ '/styles/images/androidcurrent/current9.jpg' | prepend: site.baseurl  }})    
