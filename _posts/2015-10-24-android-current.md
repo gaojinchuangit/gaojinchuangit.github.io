@@ -76,6 +76,6 @@ tag: current
     3、确认各个模块是否已经正常工作，各个模块都会影响功耗，需要在模块工作 OK 之后再测试功耗问题。
     4、测试将所有第三方 APK 删除，排除第三方 APK 问题。
 
-![current8]({{ '/styles/images/androidcurrent/current9.jpg' | prepend: site.baseurl  }})
+![current8]({{ '/styles/images/androidcurrent/current8.jpg' | prepend: site.baseurl  }})
 
 ![current9]({{ '/styles/images/androidcurrent/current9.jpg' | prepend: site.baseurl  }})    
