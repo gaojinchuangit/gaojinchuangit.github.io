@@ -45,8 +45,6 @@ tag: current
     唤醒时长：665-621 = 44s
 
 
-
-
 ### 关于wifi耗电问题
 
 **关于电流的测量**
@@ -79,4 +77,5 @@ tag: current
     4、测试将所有第三方 APK 删除，排除第三方 APK 问题。
 
 ![current8]({{ '/styles/images/androidcurrent/current9.jpg' | prepend: site.baseurl  }})
+
 ![current9]({{ '/styles/images/androidcurrent/current9.jpg' | prepend: site.baseurl  }})    
