@@ -3,7 +3,7 @@ layout: post
 title:  "Android电流功耗问题(1)"
 date:   2015-10-22 23:11:21 +0800
 categories: Android
-tag: current
+tag: 电流
 ---
 
 -----------------------
