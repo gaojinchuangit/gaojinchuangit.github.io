@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Android电流功耗问题(1)"
-date:   2015-10-22 23:11:21 +0800
+date:   2015-10-20 20:23:29 +0800
 categories: Android
-tag: 电流
+tag: current
 ---
 
 -----------------------
